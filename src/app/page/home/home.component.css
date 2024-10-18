@@ -1,0 +1,233 @@
+
+
+.container-fluid {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    
+}
+
+.row-principal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 50vh;
+    flex-direction: column;
+    background-color: #c4d8f5;
+
+}
+
+.col-text {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+   
+}
+
+.col-text h1 {
+    font-size: 55px;
+    color: rgb(31, 58, 97);
+}
+
+.col-text p {
+    font-size: 20px;
+    color: rgb(105, 104, 104);
+}
+
+
+
+.col-btn {
+    display: flex;
+    justify-content: center;
+    max-height: 40%;
+   
+}
+
+.col-btn .btn {
+    width: 200px;
+    height: 60px;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+
+
+
+
+
+
+/* servicios row2 */
+
+
+.row-servicios {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    margin-top: 3em;
+}
+
+ .col-text {
+    margin-top: 3em;
+}
+
+.col-text h2 {
+    font-size: 40px;
+    
+}
+
+
+.col-card-servicios {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin-top: 2em;
+}   
+
+.card {
+    margin: 2em;
+    width: 500px;
+    height: auto;
+    background-color: #ffff;
+    box-shadow: 0px 10px 20px rgb(102, 102, 102);
+}
+
+
+.img-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1em;
+    
+}
+.bi {
+    font-size: 60px;
+    color: rgb(31, 58, 97);
+}
+
+.card-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    color: rgb(31, 58, 97);
+}
+
+.card-text {
+    font-size: 18px;
+    color: gray;
+}
+
+/* row proyectos */
+
+
+.row-proyectos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    flex-direction: column;
+    margin-top: 10em;
+    background-color: #c4d8f5;
+}
+
+.row-proyectos .col-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5em;
+}
+
+.col-proyectos {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin-top: 5em;
+}
+
+.col-proyectos .card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 480px;
+    width: 100%;
+}
+
+
+.img-header-proyecto {
+    width: 100%;
+    height: 250px;
+}
+
+.img-header-proyecto img {
+    width: 100%;
+    height: 300px;
+} 
+
+
+
+
+
+/* row  contacto*/
+
+.row-contacto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    height: 600px;
+    margin-top: 10em;
+    background-color: #3b7ee2;
+}
+
+.col-proyectos .col-text h2{
+    color: white !important;
+}
+
+.col-form {
+    width: 50%;
+}
+
+form{
+    font-weight: 100;
+    color: #ffff;
+}
+
+.col-form .col-btn-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2em;
+}
+
+.col-form .col-btn-form .btn {
+    width: 50%;
+    box-shadow: none;
+    border-radius: 10px;
+    margin-bottom: 3em;
+}
+
+
+
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    background-color: #23334b;
+}
