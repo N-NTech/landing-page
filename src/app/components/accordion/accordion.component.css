@@ -1,0 +1,84 @@
+
+.col-accordion {
+    display: flex;
+    justify-content: start;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    margin-top: 6em;
+}
+
+.accordion {
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+    width: 80%;
+    margin:0;
+    padding: 0;
+  }
+  
+  .accordion-item {
+    margin-bottom: 10px;
+    border-radius: 5px;
+    overflow: hidden;
+    background: transparent;
+    
+  }
+  @keyframes show {
+	from {
+		opacity: 0;
+		scale: 25%;
+	}
+
+	to {
+		opacity: 1;
+		scale: 100%;
+	}
+}
+
+.accordion-item {
+	view-timeline-name: --card;
+	view-timeline-axis: block;
+
+	animation-timeline: --card;
+	animation-name: show;
+
+	animation-range: entry 25% cover 30%;
+	animation-fill-mode: both;
+}
+  
+  .accordion-header {
+    background-color: transparent !important;
+    cursor: pointer;
+  }
+  
+  .accordion-button {
+    /* box-shadow: 0 5px 20px rgba(5,103,116,1); */
+    border-bottom: 1px solid rgba(5,103,116,1);
+    background: rgba(255, 255, 255, 0);
+    backdrop-filter: blur(10px);
+    width: 100%;
+    font-weight: 100;
+    color: #FFFF;
+    font-size: 30px;
+    margin: 20px;
+  }
+  
+  .accordion-content {
+    display: none;
+    margin: 0;
+    padding: 0;
+    height: 100px;
+    box-shadow: 0 25px 45px rgba(0, 0, 0, 0.2);
+    color: #FFFF;
+    backdrop-filter: blur(10px);
+    justify-content: start;
+    width: 80%;
+    margin-left: 1em;
+    font-size: 30px;
+    transition: max-height 0.10s ease-in;
+  }
+  
+  .accordion-item:hover .accordion-content {
+    display: block;
+  }

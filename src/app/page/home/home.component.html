@@ -1,5 +1,6 @@
 
 
+
 <div class="container-fluid">
     
     <div class="row row-principal">
@@ -17,51 +18,17 @@
     <div class="row row-servicios">
 
         <div class="col col-titulo-servicio">
-            <h2>¿Por Qué elegirnos?</h2>
-            <p>En <span class="ampersand">N&NTech</span>, no solo construimos sitios web, creamos experiencias digitales impactantes.
+            <h2><Strong class="ampersand">>>> Construimos el futuro de tu negocio</Strong><br> un código a la vez.</h2>
+            <p>En <span class="ampersand">N&NTech</span>, no solo construimos sitios web, creamos experiencias digitales.
                 Nuestro enfoque personalizado, la innovación constante y el compromiso con la excelencia nos convierten en el socio ideal para impulsar 
                 tu negocio al mundo digital.</p>
               
         </div>
 
-
-        <div class="col col-accordion">
-            <div class="accordion">
-                <div class="accordion-item">
-                  <div class="accordion-header">
-                    <div class="accordion-button">
-                        Experiencia y Creatividad
-                    </div>
-                  </div>
-                  <div class="accordion-content">
-                    <p>Desarrollamos sitios web que combinan experiencia técnica con un toque creativo. Cada proyecto es único, y nos esforzamos por crear soluciones personalizadas que no solo destaquen, sino que impulsen el crecimiento de tu negocio.</p>
-                  </div>
-                </div>
-              
-                <div class="accordion-item">
-                  <div class="accordion-header">
-                    <div class="accordion-button">
-                        Innovación y Tendencias
-                    </div>
-                  </div>
-                  <div class="accordion-content">
-                    <p>Nos mantenemos a la vanguardia de las últimas tendencias en desarrollo web. Utilizamos las tecnologías más avanzadas para asegurar que tu sitio sea moderno, rápido y seguro.</p>
-                  </div>
-                </div>
-              
-                <div class="accordion-item">
-                  <div class="accordion-header">
-                    <div class="accordion-button">
-                        Soluciones a Medida
-                    </div>
-                  </div>
-                  <div class="accordion-content">
-                    <p>No creemos en soluciones genéricas. Nuestro enfoque es crear sitios web a medida, adaptados a las necesidades específicas de tu marca y tus clientes. Con nosotros, tu proyecto será único.</p>
-                  </div>
-                </div>
-              </div>
-              
+        <div class="col componente-accordion">
+            <app-accordion></app-accordion>
         </div>
+       
         
        
     </div>
@@ -76,128 +43,11 @@
             <h2>Nuestros Planes</h2>
         </div>
 
-
-        <div class="col col-planes">
-            
-               <!-- card -->
-               <div class="card-planes">
-                <div class="card-header-basic">
-                    <h4>Plan Basic</h4>
-                </div>
-                <div class="card-body">
-                    <ul>
-                        <li><i class="bi bi-check-circle-fill"></i>Panel administrativo</li>
-                        <li><i class="bi bi-check-circle-fill"></i>Carga Ilimitada de Productos</li>
-                        <li><i class="bi bi-check-circle-fill"></i>Login</li>
-                        <li><i class="bi bi-check-circle-fill"></i>Deploy</li>
-                        <li><i class="bi bi-check-circle-fill"></i>Hosting</li>
-                        <li><i class="bi bi-check-circle-fill"></i>Un pancho</li>
-                    </ul>
-
-                    <div class="col-btn-compra">
-                        <button class="btn-compra">Conseguir </button>
-                    </div>
-
-                </div>
-            </div>
-
-            
-               <!-- card -->
-            <div class="card-planes">
-                <div class="card-header-pro">
-                    <h4>Pro Plan</h4>
-                </div>
-                <div class="card-body">
-                    <ul>
-                        <li><i class="bi bi-check-circle-fill"></i>Panel administrativo</li>
-                        <li><i class="bi bi-check-circle-fill"></i>Carga Ilimitada de Productos</li>
-                        <li><i class="bi bi-check-circle-fill"></i>Login</li>
-                        <li><i class="bi bi-check-circle-fill"></i>Deploy</li>
-                        <li><i class="bi bi-check-circle-fill"></i>Hosting</li>
-                        <li><i class="bi bi-check-circle-fill"></i>Un pancho</li>
-                    </ul>
-
-                    <div class="col-btn-compra">
-                        <button class="btn-compra">Conseguir </button>
-                    </div>
-
-
-                </div>
-            </div>
-
-
-               <!-- card -->
-            <div class="card-planes">
-                <div class="card-header-premium">
-                    <h4>Premium</h4>
-                </div>
-                <div class="card-body">
-                    <ul>
-                        <li><i class="bi bi-check-circle-fill"></i>Panel administrativo</li>
-                        <li><i class="bi bi-check-circle-fill"></i>Carga Ilimitada de Productos</li>
-                        <li><i class="bi bi-check-circle-fill"></i>Login</li>
-                        <li><i class="bi bi-check-circle-fill"></i>Deploy</li>
-                        <li><i class="bi bi-check-circle-fill"></i>Hosting</li>
-                        <li><i class="bi bi-check-circle-fill"></i>Un pancho</li>
-                    </ul>
-
-                    <div class="col-btn-compra">
-                        <button class="btn-compra">Coseguir</button>
-                    </div>
-
-
-                </div>
-                
-            </div>
-            
-
-            
-
+        <div class="col componente-plan">
+            <app-card-plan></app-card-plan>    
         </div>
+        
+    
     </div>
-
-
-
-
-
-
-
-
-
-    <!-- row contactos -->
-    <div class="row row-contacto">
-        <div class="col col-text">
-            <h2>Contactanos</h2>
-        </div>
-
-        <div class="col col-form">
-            <form>
-                <div>
-                    <label for="exampleInputEmail1" class="mt-4">Email address</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-                </div>
-                <div>
-                    <label for="exampleInputEmail1" class="mt-4">Email address</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-                </div>
-
-                <div>
-                    <label for="exampleTextarea" class=" mt-4">Example textarea</label>
-                    <textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
-                </div>
-
-                <div class="col col-btn-form">
-                    <button type="button" class="btn btn-primary">Enviar Mensaje</button>
-                </div>
-
-            </form>
-        </div>
-
-    </div>
-
-
-    <footer>
-        <p>2024 N-NTech. Todos los derechos reservados</p>
-    </footer>
 
 </div>
