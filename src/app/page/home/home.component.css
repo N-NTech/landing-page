@@ -29,20 +29,38 @@
 
 
 
+
+
+
 .col-text-principal {
     display: flex;
     justify-content: center;
     flex-direction: column;   
 }
 
-.col-text-principal h1{
+.col-text-principal .focus-in-contract{
     font-family: "PT Sans", sans-serif;
     font-size: 140px;
     margin:10px;
     font-weight: 400;
     color: rgb(216, 219, 221);
     text-shadow: 0 10px 20px rgba(0,0,0, .5);
+    animation: focus-in-contract 1.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
+
+@keyframes focus-in-contract {
+    0% {
+      letter-spacing: 1em;
+      filter: blur(12px);
+      opacity: 0;
+    }
+    100% {
+      filter: blur(0px);
+      opacity: 1;
+    }
+  }
+
+
 .col-text-principal h2{
     font-family: "PT Sans", sans-serif;
     font-size: 40px;
@@ -146,43 +164,55 @@
     border-bottom: 2px solid rgba(255,255,255,.2);
     backdrop-filter: blur(10px);
 }
-
-
-.col-card-servicios {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    height: auto;
-
-}   
+ 
 
 .col-titulo-servicio {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;
     max-height: 300px;
 }
 
 .col-titulo-servicio h2 {
     font-family: "PT Sans", sans-serif;
-    font-size: 50px;
-    margin:10px;
+    font-size: 60px;
+    margin-top:1em;
     font-weight: 400;
     color: rgb(246, 248, 252);
 }
-
-
-.card {
-    margin: 2em;
-    box-shadow: 0 25px 45px rgb(0, 0, 0,.2);
-    background: rgba(255, 255, 255, 0.096);
-    border-radius: 10px;
-    backdrop-filter: blur(10px);
-    height: 300px;
-    width: 100%;
+.col-titulo-servicio p {
+    font-family: "PT Sans", sans-serif;
+    font-size: 30px;
+    margin:10px;
+    font-weight: 400;
+    color: rgb(141, 142, 143);
 }
 
-@keyframes show {
+.col-accordion {
+    display: flex;
+    justify-content: start;
+    width: 100%;
+    margin-top: 2em;
+    margin: 0;
+    padding: 0;
+}
+
+.accordion {
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+    width: 80%;
+    margin:0;
+    padding: 0;
+  }
+  
+  .accordion-item {
+    margin-bottom: 10px;
+    border-radius: 5px;
+    overflow: hidden;
+    background: transparent;
+    
+  }
+  @keyframes show {
 	from {
 		opacity: 0;
 		scale: 25%;
@@ -194,7 +224,7 @@
 	}
 }
 
-.card {
+.accordion-item {
 	view-timeline-name: --card;
 	view-timeline-axis: block;
 
@@ -204,34 +234,41 @@
 	animation-range: entry 25% cover 30%;
 	animation-fill-mode: both;
 }
-
-
-.img-header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 1em;
-    
-}
-.bi {
-    font-size: 60px;
-    color: #43C1CA
-}
-
-.card-body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    text-align: center;
-    color: #43C1CA
-}
-
-.card-text {
-    font-size: 18px;
-    color: gray;
-}
-
+  
+  .accordion-header {
+    background-color: transparent !important;
+    cursor: pointer;
+  }
+  
+  .accordion-button {
+    box-shadow: 0 5px 20px rgba(5,103,116,1);
+    background: rgba(255, 255, 255, 0);
+    backdrop-filter: blur(10px);
+    width: 100%;
+    font-weight: 100;
+    color: #FFFF;
+    font-size: 30px;
+    margin: 20px;
+  }
+  
+  .accordion-content {
+    display: none;
+    margin: 0;
+    padding: 0;
+    height: 100px;
+    box-shadow: 0 25px 45px rgba(0, 0, 0, 0.2);
+    color: #FFFF;
+    backdrop-filter: blur(10px);
+    justify-content: start;
+    width: 80%;
+    margin-left: 1em;
+    font-size: 30px;
+    transition: max-height 0.10s ease-in;
+  }
+  
+  .accordion-item:hover .accordion-content {
+    display: block;
+  }
 
 
 
@@ -393,7 +430,7 @@ li {
     justify-content: start;
     align-items: center;
     width: 100%;
-    font-size: 20px;
+    font-size: 30px;
     text-align: center;
     color: #FFFF;
     padding: 10px;
@@ -403,6 +440,7 @@ li {
 
 .bi-check-circle-fill {
     font-size: 30px;
+    
     padding-right: 10px;
     color:rgb(71, 223, 71) ;
 }
