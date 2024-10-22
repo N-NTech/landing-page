@@ -62,6 +62,7 @@
     color: #FFFF;
     font-size: 30px;
     margin: 20px;
+    color: rgb(8, 226, 255);
   }
   
   .accordion-content {
@@ -74,6 +75,7 @@
     backdrop-filter: blur(10px);
     justify-content: start;
     width: 80%;
+    font-weight: 100;
     margin-left: 1em;
     font-size: 30px;
     transition: max-height 0.10s ease-in;
