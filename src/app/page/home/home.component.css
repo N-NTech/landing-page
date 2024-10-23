@@ -155,9 +155,8 @@
     height: 80vh;
     width: 100%;
     margin-top: 8em;
-    /* background-color: conic-gradient(rgba(10,10,10,1), rgba(8,66,71,1), rgb(0, 60, 66));  */
-    /* background: linear-gradient(130deg, rgba(10,10,10,1) 25%, rgb(6, 29, 31) 80%, rgb(1, 23, 26) 100%); */
-    background: linear-gradient(73deg, rgba(5,13,14,1) 0%, rgba(5,15,15,1) 100%);
+
+    background: linear-gradient(73deg, rgba(5,13,14,1) 0%, rgba(5,15,15,1) 100%); 
     box-shadow: 0 25px 45px rgba(0, 0, 0, 0.329);
     border: 2px solid #022f35 !important;
     border-right: 2px solid rgba(255,255,255,.5);
@@ -187,7 +186,9 @@
     color: #FFFF;
 }
 
-
+.col-slider {
+  padding: 3em;
+}
 
 
 /* row proyectos */
@@ -237,7 +238,8 @@
   flex-direction: column;
   width: 100%;
   height: auto;
-  background-color:#131618;
+  background: radial-gradient(circle, rgba(5,103,116,1) 0%, rgb(22, 47, 61) 100%);
+  /* background-color:#131618; */
   box-shadow: 0 25px 45px rgba(0, 0, 0, 0.329);
   border: 2px solid #022f35 !important;
   border-bottom: 2px solid rgba(255,255,255,.2);
