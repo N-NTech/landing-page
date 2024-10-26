@@ -1,90 +1,75 @@
-
-.col-accordion {
-    display: flex;
-    justify-content: start;
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    margin-top: 6em;
+.row-cards-nosotros {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
 }
 
-.accordion {
-    display: flex;
-    justify-content: start;
-    flex-direction: column;
-    width: 80%;
-    margin:0;
-    padding: 0;
-  }
-  
-  .accordion-item {
-    margin-bottom: 10px;
-    border-radius: 5px;
-    overflow: hidden;
-    background: transparent;
-    
-  }
-  @keyframes show {
-	from {
-		opacity: 0;
-		scale: 25%;
-	}
 
-	to {
-		opacity: 1;
-		scale: 100%;
-	}
+
+
+
+
+
+
+
+
+
+
+.card {
+  position: relative;
+  width: 500px;
+  height: 300px;
+  box-sizing: border-box;
+  background-color: #212121;
+  border: 5px solid #222;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px;
+  box-shadow: rgba(93, 169, 255, 0.19) 0px 10px 20px,
+          rgba(29, 129, 196, 0.23) 0px 6px 6px,
+          inset rgba(0, 0, 0, 0.19) 0px 10px 20px,
+          inset rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  transition: all ease-in-out 0.3s;
+  overflow: hidden;
 }
 
-.accordion-item {
-	view-timeline-name: --card;
-	view-timeline-axis: block;
-
-	animation-timeline: --card;
-	animation-name: show;
-
-	animation-range: entry 25% cover 30%;
-	animation-fill-mode: both;
+.card:hover {
+  box-shadow: rgba(49, 137, 238, 0.19) 0px 10px 20px,
+          rgba(193, 44, 223, 0.23) 0px 6px 6px,
+          inset rgba(0, 0, 0, 0.19) 0px 10px 20px,
+          inset rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  border: 5px solid #30b1ec;
 }
-  
-  .accordion-header {
-    background-color: transparent !important;
-    cursor: pointer;
-  }
-  
-  .accordion-button {
-    /* box-shadow: 0 5px 20px rgba(5,103,116,1); */
-    border-bottom: 1px solid rgba(5,103,116,1);
-    background: rgba(255, 255, 255, 0);
-    backdrop-filter: blur(10px);
-    width: 100%;
-    font-weight: 100;
-    color: #FFFF;
-    font-size: 30px;
-    margin: 20px;
-    color: rgb(8, 226, 255);
-  }
-  
-  .accordion-content {
-    display: none;
-    margin: 0;
-    padding: 0;
-    height: 100px;
-    box-shadow: 0 25px 45px rgba(0, 0, 0, 0.2);
-    color: #FFFF;
-    backdrop-filter: blur(10px);
-    justify-content: start;
-    width: 80%;
-    font-weight: 100;
-    margin-left: 1em;
-    font-size: 30px;
-    transition: max-height 0.10s ease-in;
-  }
-  
-  .accordion-item:hover .accordion-content {
-    display: block;
-  }
+
+.card-title {
+  font-family: mundial, sans-serif;
+  font-style:italic;
+  margin: 0;
+  font-size: 30px !important;
+  font-weight: 300;
+  cursor: default;
+  /* font-family: "PT Sans", sans-serif; */
+  font-size: 20px;
+  margin-top: 1em;
+  color: rgb(246, 248, 252);
+}
 
 
+.card-text {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 300;
+  color: #fff;
+  overflow: hidden;
+  line-clamp: 3;
+  cursor: default;
+}
 
-/*  */
+
+.card:hover > .card-text {
+  opacity: 1;
+}
+
+

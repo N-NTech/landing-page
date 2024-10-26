@@ -8,43 +8,35 @@
         <div class="col col-text-principal">
             <h1 class="focus-in-contract">N<span class="ampersand">&</span>NTech</h1>
             <h2>Soluciones Tecnológicas que Impulsan tu Crecimiento</h2>
-            <p>Desarrollamos aplicaciones web personalzadas buscando adaptar las necesidades del cliente</p>
-            <button class="button-64" role="button"><span class="text">Contactanos</span></button>
+            <p>Desarrollamos aplicaciones web personalzadas buscando adaptar las necesidades del cliente.</p>
+            <button role="button"><span class="text">Contactanos</span></button>
         </div>
     </div>
 
 
     <!-- row servicios -->
-    <div class="row row-servicios">
+    <div class="row row-nosotros">
 
-        <div class="col col-titulo-servicio">
-            <h2><Strong class="ampersand">>>> Construimos el futuro de tu negocio</Strong><br> un código a la vez.</h2>
+        <div class="col col-titulo-nosotros">
+            <h2><Strong class="ampersand">Construimos el futuro de tu negocio</Strong><br> un código a la vez.</h2>
             <p>En <span class="ampersand">N&NTech</span>, no solo construimos sitios web, creamos experiencias digitales.
                 Nuestro enfoque personalizado, la innovación constante y el compromiso con la excelencia nos convierten en el socio ideal para impulsar 
                 tu negocio al mundo digital.</p>
               
         </div>
 
-        <div class="col componente-accordion">
-            <app-accordion></app-accordion>
+        <div class="col col-nosotros">
+              <app-accordion/>  
         </div>
        
     </div>
 
 
 
-    <div class="row row-service">
-            <div class="col col-titulo-service">
-                <h1>Servicios que podes encontrar en N&NTech</h1>
-                <p>ofrecemos una amplia gama de servicios diseñados para impulsar tu negocio en el mundo digital. </p>
-            </div>
-
+    <div class="row row-servicios">
             <div class="col col-slider">
                 <app-cardservice></app-cardservice>
-            </div>
-            
-
-           
+            </div>   
     </div>
    
 
@@ -53,7 +45,9 @@
     <div class="row row-planes">
 
         <div class="col col-titulo-plan">
-            <h2>Nuestros Planes</h2>
+            <h2>Elegí el Plan más adecuado para vos</h2>
+             <p>Sabemos que cada desafío requiere una solución a medida.
+                Por eso, dedicamos tiempo a investigar y analizar qué planes son los más beneficiosos para ti. A continuación, te mostramos nuestras propuestas que te ayudarán a avanzar.</p> 
         </div>
 
         <div class="col componente-plan">
@@ -61,5 +55,44 @@
         </div>
         
     </div>
+
+
+    <div class="row row-form">
+        <div class="col col-form">
+                  <form class="form">
+                    <p class="form-heading">Contactanos</p>
+              
+                    <div class="form-field">
+                      <input required="" placeholder="Name" class="input-field" type="text" />
+                    </div>
+              
+                    <div class="form-field">
+                      <input
+                        required=""
+                        placeholder="Email"
+                        class="input-field"
+                        type="email"
+                      />
+                    </div>              
+                    <div class="form-field">
+                      <textarea
+                        required=""
+                        placeholder="Message"
+                        cols="30"
+                        rows="3"
+                        class="input-field"
+                      ></textarea>
+                    </div>
+              
+                    <button class="sendMessage-btn">Enviar</button>
+                </form>
+        </div>
+    </div>
+
+
+    <footer>
+        <p>2024 N-NTech. Todos los derechos reservados</p>
+    </footer>
+
 
 </div>
