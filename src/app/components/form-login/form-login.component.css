@@ -1,0 +1,94 @@
+/* From Uiverse.io by DavidTM96 */ 
+
+.row-principal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.col-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: inherit;
+    gap: 10px;
+    padding-inline: 2em;
+    padding-bottom: 0.4em;
+    height: 70%;
+    width: 50% ;
+    background-color: #171717;
+    box-shadow: inset 2px 5px 10px rgb(5, 5, 5);
+    border-radius: 20px;
+
+  }
+  
+  .form-heading {
+    text-align: center;
+    margin: 2em;
+    color: #35ebc0;
+    font-size: 35px;
+    /* background-color: transparent; */
+    align-self: center;
+  }
+  
+  .form-field {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5em;
+    border-radius: 10px;
+    width: 60%;
+    padding: 1.5em;
+    border: none;
+    outline: none;
+    color: white;
+    background-color: #171717;
+    box-shadow: inset 2px 5px 10px rgb(5, 5, 5);
+  }
+  
+  .input-field {
+    background: none;
+    border: none;
+    outline: none;
+    width: 100%;
+    color: #ccd6f6;
+    padding-inline: 1em;
+  }
+  
+  .sendMessage-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+    cursor: pointer;
+    margin-bottom: 3em;
+    margin-top: 3em;
+    padding: 2em;
+    background-color: transparent;
+    color: #64ffda;
+    outline: 1px solid #399781;
+    transition: all ease-in-out 0.3s;
+  }
+  
+  .sendMessage-btn:hover {
+    transition: all ease-in-out 0.3s;
+    background-color: #64ffda;
+    color: #000;
+    cursor: pointer;
+    box-shadow: inset 2px 5px 10px rgb(5, 5, 5);
+  }

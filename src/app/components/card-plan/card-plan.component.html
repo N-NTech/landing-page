@@ -1,158 +1,18 @@
-
-<!-- <div class="col col-planes">
-    <div class="card-planes">
-        <div class="card-header-basic">
-            <h4>Plan Basic</h4>
-        </div>
-        <div class="card-price">
-            <p>AR <strong style="font-size: 40px;">$15.000</strong>/mes</p>
-        </div>
-        <div class="card-body">
-            <ul>
-                <li><i class="bi bi-check-circle-fill"></i>Panel administrativo</li>
-                <li><i class="bi bi-check-circle-fill"></i>Carga Ilimitada de Productos</li>
-                <li><i class="bi bi-check-circle-fill"></i>Login</li>
-                <li><i class="bi bi-check-circle-fill"></i>Deploy</li>
-                <li><i class="bi bi-check-circle-fill"></i>Hosting</li>
-                <li><i class="bi bi-check-circle-fill"></i>Un pancho</li>
-            </ul>
-    
-            <div class="col-btn-compra">
-                <button class="btn-compra">Conseguir </button>
-            </div>
-    
-        </div>
-    </div> -->
-    
-    
-       <!-- card -->
-    <!-- <div class="card-planes">
-        <div class="card-header-pro">
-            <h4>Pro Plan</h4>
-        </div>
-        <div class="card-price">
-            <p>AR <strong style="font-size: 40px;">$25.000</strong>/mes</p>
-        </div>
-        <div class="card-body">
-            <ul>
-                <li><i class="bi bi-check-circle-fill"></i>Panel administrativo</li>
-                <li><i class="bi bi-check-circle-fill"></i>Carga Ilimitada de Productos</li>
-                <li><i class="bi bi-check-circle-fill"></i>Login</li>
-                <li><i class="bi bi-check-circle-fill"></i>Deploy</li>
-                <li><i class="bi bi-check-circle-fill"></i>Hosting</li>
-                <li><i class="bi bi-check-circle-fill"></i>Un pancho</li>
-            </ul>
-    
-            <div class="col-btn-compra">
-                <button class="btn-compra">Conseguir </button>
-            </div>
-    
-    
-        </div>
-    </div> -->
-    
-    
-       <!-- card -->
-    <!-- <div class="card-planes">
-        <div class="card-header-premium">
-            <h4>Premium</h4>
-        </div>
-        <div class="card-price">
-            <p>AR <strong style="font-size: 40px;">$35.000</strong>/mes</p>
-        </div>
-        <div class="card-body">
-            <ul>
-                <li><i class="bi bi-check-circle-fill"></i>Panel administrativo</li>
-                <li><i class="bi bi-check-circle-fill"></i>Carga Ilimitada de Productos</li>
-                <li><i class="bi bi-check-circle-fill"></i>Login</li>
-                <li><i class="bi bi-check-circle-fill"></i>Deploy</li>
-                <li><i class="bi bi-check-circle-fill"></i>Hosting</li>
-                <li><i class="bi bi-check-circle-fill"></i>Un pancho</li>
-            </ul>
-    
-            <div class="col-btn-compra">
-                <button class="btn-compra">Coseguir</button>
-            </div>
-    
-    
-        </div>
-    </div>     -->
-<!-- </div> -->
-
-
-
 <div class="container-fluid">
     <div class="row row-principal">
-    
-        <div class="card_box_basic">
+        <div class="card_box" [ngClass]="{'card_box_premium': plan.nombre === 'Premium', 'card_box_basic': plan.nombre === 'Basic', 'card_box_pro': plan.nombre === 'Pro'}" *ngFor="let plan of listPlanes">
             <span></span>
             <div class="card-price">
-                <p>AR <strong style="font-size: 40px;">$15.000</strong>/mes</p>
+                <p>AR <strong style="font-size: 40px;">{{ plan.precio }}</strong>/mes</p>
             </div>
-            <div class="card-body">
+            <div class="card-body" *ngFor="let servicio of plan.descripcion">
                 <ul>
-                    <li><i class="bi bi-check-circle-fill"></i>Panel administrativo</li>
-                    <li><i class="bi bi-check-circle-fill"></i>Carga Ilimitada de Productos</li>
-                    <li><i class="bi bi-check-circle-fill"></i>Login</li>
-                    <li><i class="bi bi-check-circle-fill"></i>Deploy</li>
-                    <li><i class="bi bi-check-circle-fill"></i>Hosting</li>
-                    <li><i class="bi bi-check-circle-fill"></i>Un pancho</li>
+                    <li><i class="bi bi-check-circle-fill"></i>{{servicio}}</li>
                 </ul>
-        
             </div>
-
             <div class="col-btn-compra">
-                <button class="btn-compra">Conseguir </button>
+                <button class="btn-compra">Conseguir</button>
             </div>
-
-        </div>
-    
-        <div class="card_box_pro">
-            <span></span>
-            <div class="card-price">
-                <p>AR <strong style="font-size: 40px;">$25.000</strong>/mes</p>
-            </div>
-            <div class="card-body">
-                <ul>
-                    <li><i class="bi bi-check-circle-fill"></i>Panel administrativo</li>
-                    <li><i class="bi bi-check-circle-fill"></i>Carga Ilimitada de Productos</li>
-                    <li><i class="bi bi-check-circle-fill"></i>Login</li>
-                    <li><i class="bi bi-check-circle-fill"></i>Deploy</li>
-                    <li><i class="bi bi-check-circle-fill"></i>Hosting</li>
-                    <li><i class="bi bi-check-circle-fill"></i>Un pancho</li>
-                </ul>
-        
-            </div>
-
-            <div class="col-btn-compra">
-                <button class="btn-compra">Conseguir </button>
-            </div>
-
-
-        </div>
-
-        <div class="card_box">
-            <span></span>
-            <div class="card-price">
-                <p>AR <strong style="font-size: 40px;">$35.000</strong>/mes</p>
-            </div>
-            <div class="card-body">
-                <ul>
-                    <li><i class="bi bi-check-circle-fill"></i>Panel administrativo</li>
-                    <li><i class="bi bi-check-circle-fill"></i>Carga Ilimitada de Productos</li>
-                    <li><i class="bi bi-check-circle-fill"></i>Login</li>
-                    <li><i class="bi bi-check-circle-fill"></i>Deploy</li>
-                    <li><i class="bi bi-check-circle-fill"></i>Hosting</li>
-                    <li><i class="bi bi-check-circle-fill"></i>Un pancho</li>
-                </ul>
-        
-            </div>
-
-            <div class="col-btn-compra">
-                <button class="btn-compra">Conseguir </button>
-            </div>
-
         </div>
     </div>
-    
 </div>

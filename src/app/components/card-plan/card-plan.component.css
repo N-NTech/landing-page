@@ -3,6 +3,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
+    width: 100%;
 }
 
 /* Fila principal */
@@ -11,11 +13,11 @@
     justify-content: center;
     flex-wrap: nowrap;
     width: 100%;
-    gap: 100px;
+    gap: 200px;
 }
 
 /* Estilos generales de las tarjetas */
-.card_box, .card_box_basic, .card_box_pro {
+.card_box {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -30,10 +32,8 @@
     transition: all .3s;
 }
 
-
-
 /* Estilo del texto en las tarjetas */
-.card_box span, .card_box_basic span, .card_box_pro span {
+.card_box span {
     position: absolute;
     overflow: hidden;
     width: 150px;
@@ -64,9 +64,7 @@
 }
 
 /* Estilo del texto en la etiqueta */
-.card_box span::before,
-.card_box_basic span::before,
-.card_box_pro span::before {
+.card_box span::before {
     position: absolute;
     width: 300%;
     height: 60px;
@@ -92,16 +90,16 @@
     left: 0;
     height: 10px;
     z-index: -1;
-    box-shadow: 140px -140px #3f6ccc; /* Cambia el color si es necesario */
+    box-shadow: 140px -140px #3f6ccc; 
 }
 
 /* Estilo de fondo adicional */
 .card_box_basic span::after {
-    box-shadow: 140px -140px #3f6ccc; /* Cambia el color si es necesario */
+    box-shadow: 140px -140px #3f6ccc;
 }
 
 .card_box_pro span::after {
-    box-shadow: 140px -140px #cc3f47; /* Cambia el color si es necesario */
+    box-shadow: 140px -140px #cc3f47; 
 }
 
 .card-price {
@@ -113,14 +111,11 @@
 }
 
 
-
-
-
 .card-body {
     display: flex;
     justify-content: center;
-    flex-direction: column; /* Coloca los elementos en columna */
-    align-items: center; /* Centra horizontalmente */
+    flex-direction: column; 
+    align-items: center; 
     width: 100%;
     padding: 1em;
 }
@@ -132,7 +127,6 @@
     margin: 0;
     display: flex;
     flex-direction: column; 
-    gap: 0.5em; 
 }
 
 .card-body li {
@@ -151,7 +145,7 @@
 
 .card-body i {
     background-color: #171717;
-    padding: 0.2em 0.5em;
+    padding: 0.1em 0.5em;
     border-radius: 5px;
     box-shadow: inset 2px 5px 10px rgb(5, 5, 5);
     color: white;

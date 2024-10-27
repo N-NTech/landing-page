@@ -1,18 +1,13 @@
 .row-cards-nosotros {
   display: flex;
   justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  padding: 0;
+  margin: 0;
   gap: 50px;
+  height: 100%;
 }
-
-
-
-
-
-
-
-
-
-
 
 
 .card {
