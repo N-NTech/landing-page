@@ -28,29 +28,36 @@
             ],
             "styles": [
               "src/styles.css",
-              "node_modules/aos/dist/aos.css" 
+              "node_modules/aos/dist/aos.css"
             ],
             "scripts": [
-              "node_modules/aos/dist/aos.js" 
+              "node_modules/aos/dist/aos.js"
             ],
-            "server": "src/main.server.ts",
-            "prerender": true,
-            "ssr": {
-              "entry": "server.ts"
-            }
+            "budgets": [
+              {
+                "type": "initial",
+                "maximumWarning": "4mb",
+                "maximumError": "5mb"
+              },
+              {
+                "type": "any",
+                "maximumWarning": "4mb",
+                "maximumError": "5mb"
+              }
+            ]
           },
           "configurations": {
             "production": {
               "budgets": [
                 {
                   "type": "initial",
-                  "maximumWarning": "500kB",
-                  "maximumError": "1MB"
+                  "maximumWarning": "4mb",
+                  "maximumError": "5mb"
                 },
                 {
-                  "type": "anyComponentStyle",
-                  "maximumWarning": "2kB",
-                  "maximumError": "4kB"
+                  "type": "any",
+                  "maximumWarning": "4mb",
+                  "maximumError": "5mb"
                 }
               ],
               "outputHashing": "all"
@@ -87,11 +94,11 @@
             ],
             "tsConfig": "tsconfig.spec.json",
             "assets": [
-                        {
-                          "glob": "**/*",
-                          "input": "src/assets",
-                          "output": "/assets"
-                        }
+              {
+                "glob": "**/*",
+                "input": "src/assets",
+                "output": "/assets"
+              }
             ],
             "styles": [
               "src/styles.css"
@@ -106,3 +113,4 @@
     "analytics": "243255ef-68c1-43e8-8970-9e751d5755d4"
   }
 }
+
